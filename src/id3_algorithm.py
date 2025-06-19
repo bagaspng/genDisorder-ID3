@@ -15,19 +15,26 @@ def info_gain(X, y, feature):
     return total_entropy - weighted_entropy
 
 def id3(X, y, features):
+    # Jika semua label sama, return label
     if len(np.unique(y)) == 1:
         return {'label': y.iloc[0]}
+    # Jika fitur habis, return label mayoritas
     if not features:
         return {'label': y.mode()[0]}
     
+    # Pilih fitur dengan information gain tertinggi
     gains = [info_gain(X, y, f) for f in features]
     best = features[np.argmax(gains)]
 
     tree = {'feature': best, 'nodes': {}}
     for val in np.unique(X[best]):
         subset = X[best] == val
-        subtree = id3(X[subset], y[subset], [f for f in features if f != best])
-        tree['nodes'][val] = subtree
+        if subset.sum() == 0:
+            # Jika tidak ada data, return label mayoritas
+            tree['nodes'][val] = {'label': y.mode()[0]}
+        else:
+            subtree = id3(X[subset], y[subset], [f for f in features if f != best])
+            tree['nodes'][val] = subtree
 
     return tree
 
@@ -37,4 +44,4 @@ def print_tree(tree, indent=""):
     else:
         for val, subtree in tree['nodes'].items():
             print(indent + f"{tree['feature']} = {val}")
-            print_tree(subtree, indent + "  ")
+            print_tree(subtree, indent + "    ")
