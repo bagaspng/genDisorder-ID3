@@ -18,8 +18,8 @@ def predict_all(tree, X):
 
 def main():
     # Ambil sample kecil dari data
-    df_train = pd.read_csv("../dataset/train_genetic_disorders.csv").head(50)
-    df_test = pd.read_csv("../dataset/test_genetic_disorders.csv").head(20)
+    df_train = pd.read_csv("../dataset/train_genetic_disorders.csv").head(1000)
+    df_test = pd.read_csv("../dataset/test_genetic_disorders.csv").head(200)
 
     # Hapus kolom identitas jika ada
     drop_cols = [
