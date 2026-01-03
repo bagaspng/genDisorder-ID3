@@ -187,68 +187,6 @@ Sampel 3: Healthy
 
 
 
-## 🏥 Medical Domain Application
-
-### 🧬 **Genetic Disorders Covered**
-
-Sistem ini dapat mengklasifikasikan berbagai jenis gangguan genetik: 
-
-| Category | Disorders | Characteristics |
-|----------|-----------|-----------------|
-| **Neurological** | Alzheimer's, Autism | Memory, cognitive function |
-| **Metabolic** | Diabetes, Hemochromatosis | Metabolism disorders |
-| **Developmental** | Cystic Fibrosis, Tay-Sachs | Growth and development |
-| **Blood Disorders** | Thalassemia, Sickle Cell | Blood cell abnormalities |
-
-
-
-
-## 🚀 Extensions & Improvements
-
-### 🔮 **Future Enhancements**
-
-#### **Algorithm Improvements**
-- [ ] **C4.5 Algorithm** - Handle continuous variables better
-- [ ] **Random Forest** - Ensemble of decision trees
-- [ ] **Gradient Boosting** - Advanced ensemble methods
-- [ ] **Pruning Strategies** - Post-pruning for generalization
-
-#### **Medical Domain Enhancements**
-- [ ] **SNOMED CT Integration** - Medical terminology standardization
-- [ ] **ICD-10 Mapping** - International disease classification
-- [ ] **Clinical Guidelines** - Evidence-based decision rules
-- [ ] **Multi-language Support** - International medical terms
-
-#### **Technical Features**
-```python
-# Planned enhancements
-class AdvancedGeneticClassifier:
-    def __init__(self):
-        self.models = {
-            'id3': ID3Classifier(),
-            'c45': C45Classifier(),
-            'random_forest': RandomForestClassifier(),
-            'gradient_boost': GradientBoostClassifier()
-        }
-    
-    def ensemble_predict(self, X):
-        """Use ensemble of multiple algorithms"""
-        predictions = {}
-        for name, model in self. models.items():
-            predictions[name] = model.predict(X)
-        
-        return self.weighted_ensemble_vote(predictions)
-    
-    def explain_prediction(self, patient_data):
-        """Provide detailed explanation of prediction"""
-        return {
-            'decision_path': self. trace_decision_path(patient_data),
-            'feature_importance': self. calculate_shap_values(patient_data),
-            'similar_cases': self.find_similar_patients(patient_data),
-            'confidence_interval': self.bootstrap_confidence(patient_data)
-        }
-```
-
 ### 🎨 **Visualization Enhancements**
 
 ```python
