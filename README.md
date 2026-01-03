@@ -190,42 +190,10 @@ Sampel 3: Healthy
 
 **Bagas Pangestu** ([@bagaspng](https://github.com/bagaspng))
 
-- 📧 Email: bagaspangestu0407@gmail.com
-- 💼 LinkedIn: [Bagas Pangestu](https://linkedin.com/in/bagaspng)
-- 🌐 Portfolio: [bagaspng.dev](https://bagaspng.dev)
-- 🎓 Expertise: Machine Learning, Healthcare AI, Decision Trees
-
-## 🙏 Acknowledgments
-
-- **Medical Community** - For providing valuable domain knowledge
-- **Machine Learning Researchers** - For foundational algorithms
-- **Open Source Community** - For tools and libraries
-- **Healthcare Data Providers** - For enabling medical AI research
-
-## 📚 References
-
-### 📖 **Academic Papers**
-- Quinlan, J. R. (1986). "Induction of Decision Trees"
-- Breiman, L.  et al. (1984). "Classification and Regression Trees"
-- Mitchell, T. (1997). "Machine Learning"
-
-### 🌐 **Medical Resources**
-- [NCBI Genetic Testing Registry](https://www.ncbi.nlm.nih.gov/gtr/)
-- [OMIM - Online Mendelian Inheritance in Man](https://omim.org/)
-- [ClinVar - Clinical Significance of Variants](https://www.ncbi.nlm. nih.gov/clinvar/)
 
 ### 📊 **Dataset Sources**
 - [Kaggle Genetic Disorders Dataset](https://kaggle.com/datasets/genetic-disorders)
 - [UCI ML Repository - Medical Datasets](https://archive.ics.uci.edu/ml/)
-
-## 📞 Support
-
-Need help?  Contact us: 
-
-- 📖 **Documentation**: [Project Wiki](https://github.com/bagaspng/genDisorder-ID3/wiki)
-- 🐛 **Issues**: [Report Bugs](https://github.com/bagaspng/genDisorder-ID3/issues)
-- 💬 **Discussions**: [Q&A Forum](https://github.com/bagaspng/genDisorder-ID3/discussions)
-- 📧 **Email**: bagaspangestu0407@gmail.com
 
 ---
 
@@ -233,7 +201,7 @@ Need help?  Contact us:
 
 **🧬 Advancing Healthcare through AI & Machine Learning 🏥**
 
-[![GitHub stars](https://img.shields.io/github/stars/bagaspng/genDisorder-ID3? style=social)](https://github.com/bagaspng/genDisorder-ID3/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/bagaspng/genDisorder-ID3?style=social)](https://github.com/bagaspng/genDisorder-ID3/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/bagaspng/genDisorder-ID3?style=social)](https://github.com/bagaspng/genDisorder-ID3/network/members)
 
 **Made with ❤️ for the Medical AI Community**
