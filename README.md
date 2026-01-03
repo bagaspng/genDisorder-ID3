@@ -202,65 +202,6 @@ Sistem ini dapat mengklasifikasikan berbagai jenis gangguan genetik:
 
 
 
-## 📊 Dataset Information
-
-### 📋 **Dataset Structure**
-
-```python
-dataset_info = {
-    'train_genetic_disorders. csv': {
-        'rows': '~21,000 patients',
-        'features': '45+ medical attributes',
-        'target': 'Genetic Disorder classification',
-        'size': '~6. 5 MB'
-    },
-    'test_genetic_disorders.csv': {
-        'rows':  '~8,000 patients', 
-        'features': 'Same as training set',
-        'purpose': 'Model evaluation',
-        'size': '~2.4 MB'
-    }
-}
-```
-
-### 🔍 **Feature Categories**
-
-```python
-feature_categories = {
-    'demographic': ['Gender', 'Age', 'Ethnicity'],
-    'medical_history': ['Family History', 'Previous Conditions'],
-    'laboratory_tests': ['Blood cell count', 'Enzyme levels', 'Protein markers'],
-    'clinical_symptoms': ['Physical symptoms', 'Behavioral indicators'],
-    'genetic_markers': ['Gene expressions', 'Chromosomal abnormalities']
-}
-```
-
-### 🧹 **Data Preprocessing Pipeline**
-
-```python
-def preprocessing_pipeline(df):
-    """Complete data preprocessing pipeline"""
-    
-    # 1. Remove identity columns
-    identity_cols = ['Patient Id', 'Patient First Name', 'Family Name', 
-                    "Father's name", 'Institute Name', 'Location of Institute']
-    df = df.drop(columns=identity_cols, errors='ignore')
-    
-    # 2. Discretize numerical features
-    if "Blood cell count (mcL)" in df.columns:
-        df["Blood cell count (mcL)"] = discretize_blood_cell_count(df["Blood cell count (mcL)"])
-    
-    # 3. Handle missing values
-    df = df.fillna('missing').astype(str)
-    
-    # 4. Remove samples with missing target
-    df = df[df["Genetic Disorder"] != 'missing']
-    
-    # 5. Balance classes
-    df = balance_per_label(df, "Genetic Disorder", max_per_label=100)
-    
-    return df
-```
 
 ## 🎯 Use Cases & Applications
 
