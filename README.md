@@ -141,17 +141,7 @@ genDisorder-ID3/
 └── 📖 README.md             # Documentation (this file)
 ```
 
-## 🎮 Penggunaan
 
-### 🏃‍♂️ **Quick Start**
-
-```bash
-# Navigate to source directory
-cd src
-
-# Run the main program
-python main.py
-```
 
 ### 📊 **Expected Output**
 
