@@ -143,38 +143,6 @@ genDisorder-ID3/
 
 
 
-### 📊 **Expected Output**
-
-```
-=== Struktur Pohon Keputusan (ID3) ===
-Blood cell count (mcL) = low
-    Gender = Female
-        → Label:  Alzheimer's
-    Gender = Male
-        → Label: Diabetes
-Blood cell count (mcL) = normal
-    Age = Adult
-        → Label:  Healthy
-    Age = Child
-        → Label:  Autism
-
-=== Evaluasi Model pada Data Uji ===
-Akurasi: 0.87
-
-=== Prediksi Gangguan Genetik per Sampel ===
-Sampel 1: Alzheimer's
-Sampel 2: Diabetes
-Sampel 3: Healthy
-... 
-
-=== Ringkasan Hasil Prediksi ===
-- Alzheimer's: 45 kasus dari 200 sampel
-- Diabetes: 38 kasus dari 200 sampel
-- Healthy: 67 kasus dari 200 sampel
-- Autism: 25 kasus dari 200 sampel
-- Other disorders: 25 kasus dari 200 sampel
-```
-
 
 ## 👨‍💻 Author
 
